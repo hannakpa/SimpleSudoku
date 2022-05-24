@@ -1,0 +1,92 @@
+body{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+  text-align: center;
+}
+
+hr{
+  width: 500px;
+}
+
+#errors{
+  color:coral
+
+}
+#box{
+  width: 50vw;
+  height: auto;
+  margin: 3rem auto;
+  padding: 1rem 3rem;
+  background: linear-gradient(to top right, rgba(224, 49, 255, 0.175), white);
+  border-radius: 20px;
+  box-shadow: 1rem 1rem 1rem  rgba(0, 36, 153, 0.507);
+  
+}
+
+#board{
+  width:450px;
+  height:450px;
+
+  margin:0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  cursor:pointer
+
+}
+
+.tile {
+  width: 48px;
+  height:48px;
+  border: 1px solid lightgrey;
+
+  /* text */
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+#digits {
+  width:450px;
+  height: 50px;
+  margin: 0 auto;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.number {
+
+  width: 44px;
+    height: 44px;
+    border: 1px solid black;
+    margin: 2px;
+    /* text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.number-selected {
+  background-color: rgb(223, 172, 255);
+  box-shadow: 3px 3px 3px white ;
+}
+
+.tile-start{
+  background-color: rgb(240, 238, 254);
+}
+
+/* when the row is 2 or 5, add a bottom border */
+
+.horizontal-line{
+  border-bottom: 1px solid black;
+
+}
+
+.vertical-line{
+  border-right: 1px solid black;
+}
